@@ -1,0 +1,66 @@
+nh-button {
+  $borderRadius: 3rem;
+  display: block;
+  height: 3.6rem;
+  width: 100%;
+  min-width: 16rem;
+  max-width: 25rem;
+
+  .button {
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-weight: $medium;
+    height: inherit;
+    width: inherit;
+    transition: all 0.2s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.dark-purple {
+      color: $white;
+      border: 0.1rem solid $dark-grey;
+      background: $dark-grey;
+
+      &:hover {
+        background: darken($dark-grey, 6%);
+        border: 0.1rem solid darken($dark-grey, 6%);
+      }
+    }
+
+    &.dark-yellow {
+      color: $dark-yellow;
+      border: 0.1rem solid $dark-yellow;
+      background: transparent;
+
+      &:hover {
+        color: $white;
+        background: $dark-yellow;
+      }
+    }
+
+    &.white {
+      color: $white;
+      border: 0.1rem solid $white;
+      background: transparent;
+
+      &:hover {
+        color: $charcoal;
+        background: $white;
+      }
+    }
+
+    &.rock-blue {
+      color: $rock-blue;
+      border: 0.1rem solid $rock-blue;
+      background: transparent;
+
+      &:hover {
+        color: $white;
+        background: $rock-blue;
+      }
+    }
+
+  }
+}

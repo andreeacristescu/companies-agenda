@@ -1,0 +1,13 @@
+<article class="component-book-box">
+    <div class="box-wrapper">
+
+        <h4 class="title uppercase">{{$ctrl.book.name}}</h4>
+        <div class="description">{{$ctrl.book.phoneNumber}}</div>
+        <div class="description">{{$ctrl.book.address}}</div>
+    </div>
+
+    <a class="delete cursor" ng-click="$ctrl.confirmationForm($ctrl.book._id)"><i class="icon delete-icon icon-icon-delete"></i>Delete
+        Company</a>
+
+</article>
+

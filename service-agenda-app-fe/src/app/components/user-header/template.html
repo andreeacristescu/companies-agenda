@@ -1,0 +1,12 @@
+<div class="component-user-header noprint">
+    <a class="link cursor" href="/">
+        <i class="logo icon-books"></i>
+    </a>
+    <div class="pull-right user-menu-wrapper">
+        <div class="cursor div">
+            <img class="image" ng-src="{{$ctrl.currentUser.ImageUrl}}">
+            <span class="span cursor username">{{$ctrl.currentUser.Name}}</span>
+            <span class="span cursor signout" ng-click="$ctrl.signOut()">Sign out</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="component-add-books-form">
+    <button class="close-button" type="button" ng-click="$ctrl.dismiss()">&times;</button>
+    <h1 class="title uppercase">Add Company</h1>
+
+    <form method="post" class="add-book-form" name="form">
+
+        <nh-info-box type="error" ng-if="$ctrl.errors.general">
+            {{$ctrl.errors.general}}
+        </nh-info-box>
+
+        <nh-input class="book-title"
+                  label="Company Name"
+                  type="text"
+                  input-id="name"
+                  bind="$ctrl.name"
+                  placeholder="Add a Company Name"
+                  error="$ctrl.errors.name">
+        </nh-input>
+
+        <nh-input class="book-title"
+                  label="Company Phone Number"
+                  type="text"
+                  input-id="phoneNumber"
+                  bind="$ctrl.phoneNumber"
+                  placeholder="Add a Company Phone Number"
+                  error="$ctrl.errors.name">
+        </nh-input>
+
+        <nh-input class="book-description"
+                  label="Company Address"
+                  type="text"
+                  input-id="address"
+                  bind="$ctrl.address"
+                  placeholder="Add a Company Address"
+                  error="$ctrl.errors.name">
+        </nh-input>
+
+        <nh-button theme="dark-purple" on-click="$ctrl.addBook()">
+            Add company
+        </nh-button>
+    </form>
+</div>

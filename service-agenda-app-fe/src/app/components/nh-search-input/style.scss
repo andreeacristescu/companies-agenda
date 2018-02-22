@@ -1,0 +1,37 @@
+nh-search-input {
+  padding: 1rem 4rem 0 5rem;
+  .nh-search-input-wrapper {
+    .search-icon {
+      background-color: $dark-grey;
+      margin-left: 10rem;
+    }
+    input:focus, input:active {
+      outline: none;
+      width: 30rem;
+    }
+
+    input {
+      width: 8.7rem;
+      height: 3rem;
+      background: $white;
+      border: 0.1rem solid $dark-grey;
+      font-size: 10pt;
+      padding-left: 1rem;
+      border-radius: 0.5rem;
+      color: $dark-grey;
+      -webkit-transition: width .55s ease;
+      transition: width .55s ease;
+      @include placeholder {
+        font-family: "Roboto", "icomoon", sans-serif;
+        color: #65737e;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: 1rem 1rem 2.9rem 0 rgba(45, 35, 55, 0.29);
+        @include placeholder {
+          color: transparent !important;
+        }
+      }
+    }
+  }
+}
