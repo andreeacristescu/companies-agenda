@@ -17,7 +17,7 @@
 <input
         ng-if="$ctrl.type == 'number'"
         class="input"
-        maxlength="13"
+        maxlength="14"
         ng-class="{'error': $ctrl.error}"
         type="{{$ctrl.type}}"
         id="{{$ctrl.inputId}}"
@@ -25,5 +25,6 @@
         placeholder="{{$ctrl.placeholder}}"
         ng-model="$ctrl.bind"
         ng-change="$ctrl.resetError()"/>
+
 
 <div class="error-message-bubble" ng-show="$ctrl.error">{{$ctrl.error}}</div>
