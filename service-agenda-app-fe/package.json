@@ -1,7 +1,7 @@
 {
-    "name": "service-teacher-session",
+    "name": "service-session",
     "version": "1.0.0",
-    "description": "Mentorina Teacher Session",
+    "description": "",
     "main": "src/index.js",
     "scripts": {
         "build:prod": "node ./node_modules/gulp/bin/gulp --env=prod build",
